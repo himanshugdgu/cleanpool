@@ -130,6 +130,11 @@ const Page = () => {
 
   return (
     <div className="container-2 position-absolute">
+      <img 
+      className="background-img"
+        src="https://media.istockphoto.com/id/1208869533/photo/cistern-tank-truck-close-up-on-a-highway-road.jpg?s=612x612&w=0&k=20&c=1SQD94Ggjs1SOOQ2eV3lIHF3q2Wd8vm-UEKRfz2sIIA="
+        alt=""
+      />
       <h1 className="mb-4 text-center">Orders</h1>
       <h2>Items:</h2>
       <div className="row">

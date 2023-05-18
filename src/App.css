@@ -116,3 +116,19 @@
 .container-thanks{
   margin-top: 300px;
 }
+.background-img{
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* blur image when scrolling below 100px */
+  filter: blur(5px);
+  /* stick image */
+  position: fixed;
+  z-index: -1;
+}
