@@ -59,7 +59,7 @@ const Advance = () => {
                 {method} <span className="text-muted">{Advantages[index]}</span>
               </h2>
               <p className="lead">{desc[index]}</p>
-              <Link to="/buy">
+              <Link to="/cleanpool/buy">
                 <button
                   type="button"
                   className="btn btn-primary btn-lg shadow-lg"

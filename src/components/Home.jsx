@@ -84,7 +84,7 @@ const Home = () => {
           <br />
         </div>
         <div className="explore-button position-absolute translate-middle">
-          <Link to="/conventional">
+          <Link to="/cleanpool/conventional">
             <button
               type="button"
               className="btn btn-primary btn-lg"
@@ -93,7 +93,7 @@ const Home = () => {
               Conventional Methods
             </button>
           </Link>
-          <Link to="/advance">
+          <Link to="/cleanpool/advance">
             <button
               type="button"
               className="btn btn-primary btn-lg

@@ -7,10 +7,12 @@ const Hero = () => {
     <div>
       <img className="pool1" src={pool1} alt="pool" />
       <div className="changing-text position-absolute  translate-middle ">
-        <h1 className="text-center text-white  ">Swimming Pool</h1>
-        <h3 className="text-center text-white">Book your slot now</h3>
+        <h1 className="text-center text-white ">Swimming Pool</h1>
+        <h3 className="text-center text-white mt-4">
+          Book your Cleaning Service Now
+        </h3>
       </div>
-      <Link to="/cleanpool/buy">
+      <Link to="/cleanpool/home">
         <button
           type="button"
           className="btn btn-primary btn-lg mt-5
@@ -18,7 +20,7 @@ const Hero = () => {
         shadow-lg
       "
         >
-          Book Now
+          Explore Services
         </button>
       </Link>
     </div>
