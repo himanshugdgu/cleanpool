@@ -17,13 +17,13 @@ const Page = () => {
   ];
 
   const [items, setItems] = useState([
-    { id: 1, name: "Skimmer Net", price: 80, taxRate: 0.1, selected: false },
+    { id: 1, name: "Skimmer Net", price: 80, taxRate: 0.18, selected: false },
     { id: 2, name: "Pool Brush", price: 100, taxRate: 0.2, selected: false },
     {
       id: 3,
       name: "Manual Pool Vacuum",
       price: 200,
-      taxRate: 0.3,
+      taxRate: 0.18,
       selected: false,
     },
     { id: 4, name: "Chlorination", price: 220, taxRate: 0.4, selected: false },
@@ -31,49 +31,49 @@ const Page = () => {
       id: 5,
       name: "Draining and Refilling",
       price: 100,
-      taxRate: 0.5,
+      taxRate: 0.1,
       selected: false,
     },
     {
       id: 6,
       name: "Robotic Cleaners",
       price: 300,
-      taxRate: 0.6,
+      taxRate: 0.18,
       selected: false,
     },
     {
       id: 7,
       name: "Pressure-Side Cleaners",
-      price: 33,
-      taxRate: 0.7,
+      price: 300,
+      taxRate: 0.18,
       selected: false,
     },
     {
       id: 8,
       name: "Suction-Side Cleaners",
-      price: 80,
-      taxRate: 0.8,
+      price: 300,
+      taxRate: 0.18,
       selected: false,
     },
     {
       id: 9,
       name: "UV-C Light Systems",
-      price: 90,
-      taxRate: 0.9,
+      price: 350,
+      taxRate: 0.18,
       selected: false,
     },
     {
       id: 10,
       name: "Ozone Generators",
-      price: 100,
-      taxRate: 0.1,
+      price: 320,
+      taxRate: 0.18,
       selected: false,
     },
     {
       id: 11,
       name: "Chemical Feeders",
-      price: 110,
-      taxRate: 0.2,
+      price: 300,
+      taxRate: 0.18,
       selected: false,
     },
   ]);
@@ -144,7 +144,7 @@ const Page = () => {
               <div className="card">
                 <div className="card-body">
                   <h5 className="card-title">{item.name}</h5>
-                  <p className="card-text">₹{item.price}</p>
+                  <p className="card-text">₹{item.price} per m&#178;</p>
                   {!cartItems.find((cartItem) => cartItem.id === item.id) ? (
                     <button
                       className="btn btn-primary"
@@ -163,45 +163,48 @@ const Page = () => {
           ))}
         </div>
         <div className="cart">
-        <h2 className="mt-4 text-white">Cart:</h2>
-        {cartItems.length > 0 ? (
-          <div className="mb-5 text-white">
-            <table className="table text-white">
-              <thead>
-                <tr>
-                  <th>Item</th>
-                  <th>Price</th>
-                  <th>Tax Rate (GST)</th>
-                  <th>Subtotal</th>
-                </tr>
-              </thead>
-              <tbody>
-                {cartItems.map((item) => (
-                  <tr key={item.id}>
-                    <td>{item.name}</td>
-                    <td>₹{item.price.toFixed(2)}</td>
-                    <td>{(item.taxRate * 100).toFixed(2)}% (GST)</td>
-                    <td>₹{(item.price * (1 + item.taxRate)).toFixed(2)}</td>
-                    <td>
-                      <button
-                        className="btn btn-danger"
-                        onClick={() => handleRemoveFromCart(item.id)}
-                      >
-                        Remove
-                      </button>
-                    </td>
+          <h2 className="mt-4 text-white">Cart:</h2>
+          {cartItems.length > 0 ? (
+            <div className="mb-5 text-white">
+              <table className="table text-white">
+                <thead>
+                  <tr>
+                    <th>Item</th>
+                    <th>Price (per m&#178;)</th>
+                    <th>Tax Rate (GST)</th>
+                    <th>Subtotal</th>
                   </tr>
-                ))}
-              </tbody>
-            </table>
-            <h4 className="mt-3">Total Price: ₹{totalPrice.toFixed(2)}</h4>
-            <button className="btn btn-success mt-3" onClick={handlePlaceOrder}>
-              Buy Now
-            </button>
-          </div>
-        ) : (
-          <p className="text-white">Your cart is empty.</p>
-        )}
+                </thead>
+                <tbody>
+                  {cartItems.map((item) => (
+                    <tr key={item.id}>
+                      <td>{item.name}</td>
+                      <td>₹{item.price.toFixed(2)}</td>
+                      <td>{(item.taxRate * 100).toFixed(2)}% (GST)</td>
+                      <td>₹{(item.price * (1 + item.taxRate)).toFixed(2)}</td>
+                      <td>
+                        <button
+                          className="btn btn-danger"
+                          onClick={() => handleRemoveFromCart(item.id)}
+                        >
+                          Remove
+                        </button>
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+              <h4 className="mt-3">Total Price: ₹{totalPrice.toFixed(2)}</h4>
+              <button
+                className="btn btn-success mt-3"
+                onClick={handlePlaceOrder}
+              >
+                Buy Now
+              </button>
+            </div>
+          ) : (
+            <p className="text-white">Your cart is empty.</p>
+          )}
         </div>
         {showPopup && (
           <div className="popup d-flex align-items-center justify-content-center text-white mt-5 final-order">
