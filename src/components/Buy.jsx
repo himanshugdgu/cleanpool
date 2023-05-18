@@ -249,7 +249,7 @@ const Page = () => {
                 {/* south east */}
               </select>
             </div>
-            <Link to="/thanks">
+            <Link to="/cleanpool/thanks">
               <button className="btn btn-success mt-3 mx-3">Place Order</button>
             </Link>
             <button

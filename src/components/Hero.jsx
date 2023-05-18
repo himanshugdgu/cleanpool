@@ -10,7 +10,7 @@ const Hero = () => {
         <h1 className="text-center text-white  ">Swimming Pool</h1>
         <h3 className="text-center text-white">Book your slot now</h3>
       </div>
-      <Link to="/buy">
+      <Link to="/cleanpool/buy">
         <button
           type="button"
           className="btn btn-primary btn-lg mt-5

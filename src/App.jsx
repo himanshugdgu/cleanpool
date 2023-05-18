@@ -18,14 +18,14 @@ function App() {
         <Navbar />
 
         <Routes>
-          <Route path="/" element={<Hero />} />
-          <Route path="/home" element={[<Home />]} />
-          <Route path="/service" element={[<Service />]} />
-          <Route path="/conventional" element={[<Conventional />]} />
-          <Route path="/advance" element={[<Advance />]} />
-          <Route path="buy" element={[<Page />]} />
-          <Route path="thanks" element={[<ThankYouPage />]} />
-          <Route path="contact" element={<ContactUsPage />} />
+          <Route path="/cleanpool" element={<Hero />} />
+          <Route path="/cleanpool/home" element={[<Home />]} />
+          <Route path="/cleanpool/service" element={[<Service />]} />
+          <Route path="/cleanpool/conventional" element={[<Conventional />]} />
+          <Route path="/cleanpool/advance" element={[<Advance />]} />
+          <Route path="/cleanpool/buy" element={[<Page />]} />
+          <Route path="/cleanpool/thanks" element={[<ThankYouPage />]} />
+          <Route path="/cleanpool/contact" element={<ContactUsPage />} />
           <Route path="*" element={<Error />} />
         </Routes>
       </Router>

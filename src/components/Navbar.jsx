@@ -81,7 +81,7 @@ const Navbar = () => {
     // </nav>
     <nav className="navbar navbar-expand-lg bg-body-tertiary">
       <div className="container-fluid">
-        <a className="navbar-brand" href="/">
+        <a className="navbar-brand" href="/cleanpool">
           Clean Pool
         </a>
         <div
@@ -97,12 +97,12 @@ const Navbar = () => {
           "
           >
             <li className="nav-item">
-              <a className="nav-link " aria-current="page" href="/">
+              <a className="nav-link " aria-current="page" href="/cleanpool">
                 Home
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/home">
+              <a className="nav-link" href="/cleanpool/home">
                 Explore
               </a>
             </li>
@@ -118,12 +118,12 @@ const Navbar = () => {
               </a>
               <ul className="dropdown-menu">
                 <li>
-                  <a className="dropdown-item" href="/conventional">
+                  <a className="dropdown-item" href="/cleanpool/conventional">
                     Conventional Cleaning
                   </a>
                 </li>
                 <li>
-                  <a className="dropdown-item" href="/advance">
+                  <a className="dropdown-item" href="/cleanpool/advance">
                     Advance Cleaning
                   </a>
                 </li>
@@ -131,7 +131,7 @@ const Navbar = () => {
             </li>
             <li className="nav-item">
               {/* contact us */}
-              <a className="nav-link" href="/contact">
+              <a className="nav-link" href="/cleanpool/contact">
                 Contact Us
               </a>
             </li>
