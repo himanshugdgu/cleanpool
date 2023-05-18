@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const ContactUsPage = () => {
   return (
     <div
-      className="container py-3 position-absolute 
+      className="container container-error py-3 position-absolute 
     "
     >
       <h1 className="text-center mb-4">Contact Us</h1>

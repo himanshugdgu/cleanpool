@@ -101,11 +101,18 @@
   border: 1px solid red;
 }
 
-.container{
-  margin-top: 300px;
-}
+
 .container-2{
   
   margin-top: 100px;
   padding: 30px;
+}
+
+.container-error{
+  margin-top: 80px;
+  
+}
+
+.container-thanks{
+  margin-top: 300px;
 }

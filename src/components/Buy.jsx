@@ -235,12 +235,23 @@ const Page = () => {
               <label htmlFor="location">Location:</label>
               <select id="location" className="form-control">
                 <option value="">Select Location</option>
-                <option value="location1">Location 1</option>
-                <option value="location2">Location 2</option>
-                <option value="location3">Location 3</option>
+                <option value="location1">New Delhi</option>
+                <option value="location2">Central Delhi</option>
+                <option value="location3">West Delhi</option>
+                <option value="location4">South Delhi</option>
+                <option value="location5">North Delhi</option>
+                <option value="location6">East Delhi</option>
+                <option value="location7">North East Delhi</option>
+                <option value="location8">North West Delhi</option>
+                <option value="location9">South East Delhi</option>
+                <option value="location10">South West Delhi</option>
+
+                {/* south east */}
               </select>
             </div>
-            <button className="btn btn-success mt-3 mx-3">Place Order</button>
+            <Link to="/thanks">
+              <button className="btn btn-success mt-3 mx-3">Place Order</button>
+            </Link>
             <button
               className="btn btn-secondary mt-3 mx-3"
               onClick={() => setShowPopup(false)}

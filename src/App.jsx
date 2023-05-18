@@ -19,10 +19,10 @@ function App() {
 
         <Routes>
           <Route path="/" element={<Hero />} />
-          <Route path="home" element={[<Home />]} />
-          <Route path="service" element={[<Service />]} />
-          <Route path="conventional" element={[<Conventional />]} />
-          <Route path="advance" element={[<Advance />]} />
+          <Route path="/home" element={[<Home />]} />
+          <Route path="/service" element={[<Service />]} />
+          <Route path="/conventional" element={[<Conventional />]} />
+          <Route path="/advance" element={[<Advance />]} />
           <Route path="buy" element={[<Page />]} />
           <Route path="thanks" element={[<ThankYouPage />]} />
           <Route path="contact" element={<ContactUsPage />} />

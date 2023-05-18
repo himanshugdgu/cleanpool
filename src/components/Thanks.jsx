@@ -3,7 +3,7 @@ import React from "react";
 const ThankYouPage = () => {
   return (
     <div
-      className="container  position-absolute
+      className="container-thanks container position-absolute
     start-50
     translate-middle
     "

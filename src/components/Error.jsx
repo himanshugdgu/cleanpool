@@ -2,7 +2,7 @@ import React from 'react';
 
 const Error = () => {
   return (
-    <div className="container ">
+    <div className="container-error position-absolute">
       <div className="row justify-content-center">
         <div className="col-md-6 text-center">
           <img
