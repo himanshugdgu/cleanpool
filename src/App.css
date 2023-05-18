@@ -132,3 +132,25 @@
   position: fixed;
   z-index: -1;
 }
+.cart{
+  padding: 40px;
+  border-radius: 10px;
+  margin-top: 30px;
+  
+  /* background-color: gray; */
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.final-order{
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.5); 
+  
+}
+.tiles{
+  background-color: white;
+}
+.heading{
+  background-color: rgba(0, 0, 0, 0.5); 
+  padding: 10px;
+  
+}

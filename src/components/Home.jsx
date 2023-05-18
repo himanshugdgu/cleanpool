@@ -21,13 +21,22 @@ const Home = () => {
       >
         <div className="carousel-inner">
           <div className="carousel-item active">
-            <img src="https://source.unsplash.com/1400x600/?pool" alt="" />
+            <img
+              src="https://images.unsplash.com/photo-1645089063499-7ca57e1f964e?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=600&ixid=MnwxfDB8MXxyYW5kb218MHx8d2F0ZXIsY2xlYW5pbmd8fHx8fHwxNjg0MzkwMTYy&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1400"
+              alt=""
+            />
           </div>
           <div className="carousel-item">
-            <img src="https://source.unsplash.com/1400x600/?swimming" alt="" />
+            <img
+              src="https://images.unsplash.com/photo-1453872302360-eed3c5f8ff66?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=600&ixid=MnwxfDB8MXxyYW5kb218MHx8d2F0ZXIsY2xlYW5pbmd8fHx8fHwxNjg0MzkwMTIz&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1400"
+              alt=""
+            />
           </div>
           <div className="carousel-item">
-            <img src="https://source.unsplash.com/1400x600/?water" alt="" />
+            <img
+              src="https://images.unsplash.com/photo-1585156140347-eb5e94dfe4f1?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=600&ixid=MnwxfDB8MXxyYW5kb218MHx8cG9vbCxjbGVhbmluZ3x8fHx8fDE2ODQzOTAwNjE&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1400"
+              alt=""
+            />
           </div>
         </div>
         <button

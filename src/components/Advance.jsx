@@ -31,55 +31,66 @@ const Advance = () => {
   ];
 
   return (
-    <div className="services-component">
-      <h1
-        className="
+    <>
+      <img
+        className="background-img"
+        src="https://bgspoolsandspas.com.au/wp-content/uploads/2017/10/bgs-pools-and-spas-prices-swimming-pool-prices-untangled.jpg"
+        alt=""
+      />
+
+      <div className="services-component">
+        <h1
+          className="
         text-center
         mt-5
+      heading
+      text-white
         "
-      >
-        Advance methods
-      </h1>
-      <div className="container mt-5 mb-5">
-        {methods.map((method, index) => (
-          <div
-            key={index}
-            className={`row featurette d-flex justify-content-center align-items-center mt-5
+        >
+          Advance methods
+        </h1>
+        <div className="container mt-5 mb-5 ">
+          {methods.map((method, index) => (
+            <div
+              key={index}
+              className={`row featurette d-flex justify-content-center align-items-center mt-5
                 border py-5 mx-auto  rounded shadow-lg
-                
+                tiles
             ${index % 2 === 1 ? "flex-row-reverse " : ""}`}
-          >
-            <div className="col-md-7">
-              <h2
-                className="featurette-heading text-shadow-heading
+            >
+              <div className="col-md-7">
+                <h2
+                  className="featurette-heading text-shadow-heading
                 
                 
               "
-              >
-                {method} <span className="text-muted">{Advantages[index]}</span>
-              </h2>
-              <p className="lead">{desc[index]}</p>
-              <Link to="/cleanpool/buy">
-                <button
-                  type="button"
-                  className="btn btn-primary btn-lg shadow-lg"
                 >
-                  Book Now
-                </button>
-              </Link>
+                  {method}{" "}
+                  <span className="text-muted">{Advantages[index]}</span>
+                </h2>
+                <p className="lead">{desc[index]}</p>
+                <Link to="/cleanpool/buy">
+                  <button
+                    type="button"
+                    className="btn btn-primary btn-lg shadow-lg"
+                  >
+                    Book Now
+                  </button>
+                </Link>
+              </div>
+              <div className="col-md-3">
+                <img
+                  className="img-fluid rounded shadow"
+                  // src={`https://source.unsplash.com/500x300/?${method}`}
+                  src={imgLink[index]}
+                  alt=""
+                />
+              </div>
             </div>
-            <div className="col-md-3">
-              <img
-                className="img-fluid rounded shadow"
-                // src={`https://source.unsplash.com/500x300/?${method}`}
-                src={imgLink[index]}
-                alt=""
-              />
-            </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 

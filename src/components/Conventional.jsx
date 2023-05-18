@@ -57,43 +57,56 @@ const Conventional = () => {
   };
 
   return (
-    <div className="services-component">
-      <img src="" alt="" />
-      <h1 className="text-center mt-5">Conventional methods</h1>
-      <div className="container mt-5 mb-5">
-        {methods.map((method, index) => (
-          <div
-            key={index}
-            className={`row featurette d-flex justify-content-center align-items-center mt-5
+    <>
+      <img
+      className="background-img"
+        src="https://images.squarespace-cdn.com/content/v1/535c86cfe4b05fe61b32a91f/1656432745528-QAIWF15BMTN0IBK8JTTS/CC+Pool.jpg"
+        alt=""
+      />
+      <div className="services-component">
+        <h1
+          className="text-center mt-5 heading
+      text-white"
+        >
+          Conventional methods
+        </h1>
+        <div className="container mt-5 mb-5">
+          {methods.map((method, index) => (
+            <div
+              key={index}
+              className={`row featurette d-flex justify-content-center align-items-center mt-5
+              tiles
                 border py-5 mx-auto  rounded shadow-lg
                 ${index % 2 === 1 ? "flex-row-reverse" : ""}`}
-          >
-            <div className="col-md-7">
-              <h2 className="featurette-heading text-shadow-heading">
-                {method} <span className="text-muted">{Advantages[index]}</span>
-              </h2>
-              <p className="lead">{desc[index]}</p>
-              <Link to="/cleanpool/buy">
-                <button
-                  type="button"
-                  className="btn btn-primary btn-lg shadow-lg"
-                  onClick={() => addToCart(method)}
-                >
-                  Book Now
-                </button>
-              </Link>
+            >
+              <div className="col-md-7">
+                <h2 className="featurette-heading text-shadow-heading">
+                  {method}{" "}
+                  <span className="text-muted">{Advantages[index]}</span>
+                </h2>
+                <p className="lead">{desc[index]}</p>
+                <Link to="/cleanpool/buy">
+                  <button
+                    type="button"
+                    className="btn btn-primary btn-lg shadow-lg"
+                    onClick={() => addToCart(method)}
+                  >
+                    Book Now
+                  </button>
+                </Link>
+              </div>
+              <div className="col-md-3">
+                <img
+                  className="img-fluid rounded shadow"
+                  src={imgLink[index]}
+                  alt=""
+                />
+              </div>
             </div>
-            <div className="col-md-3">
-              <img
-                className="img-fluid rounded shadow"
-                src={imgLink[index]}
-                alt=""
-              />
-            </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 
