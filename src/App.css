@@ -1,38 +1,111 @@
-.App {
-  text-align: center;
+.pool1{
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* blur image when scrolling below 100px */
+  filter: blur(5px);
+  /* stick image */
+  position: fixed;
+  z-index: -1;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.changing-text{
+  font-size: 50px;
+  /* shadow */
+  text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.9);
+  top: 40%;
+  left: 50%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.explore-button{
+  top: 60%;
+  left: 50%;
+  text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.9);
+}
+
+
+/* for mobile devices */
+@media screen and (max-width: 768px){
+  .pool1{
+    width: 100vw;
+    height: auto;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.navbar{
+  background-color: transparent;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  transition: 0.5s;
+
+  /* white backgroundafter when something is underneath*/
+  background-color: rgba(255, 255, 255, 0.9);
+
+}
+
+.services-component{
+  position: absolute;
+  top: 5%;
+  /* hirizontally center */
+  width: 100%;
+}
+
+
+.ulist li{
+  display: inline-block;
+  padding: 5px;
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+
+.navbar-brand{
+  font-size: 25px;
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+
+.btn-purple {
+  background-color: purple;
+  color: white;
+  /* hover */
+  transition: 0.2s;
+
+}
+.btn-purple:hover{
+  background-color: white;
+  color: purple;
+  border: 1px solid purple;
+}
+
+.btn-red{
+  background-color: red;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.btn-red:hover{
+  background-color: white;
+  color: red;
+  border: 1px solid red;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.container{
+  margin-top: 300px;
+}
+.container-2{
+  
+  margin-top: 100px;
+  padding: 30px;
 }
